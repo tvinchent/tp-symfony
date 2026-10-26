@@ -1,0 +1,1 @@
+{% extends 'base.html.twig' %}{% block body %}<h1>{{ salon.nom }}</h1><p>{{ salon.description }}</p>{% for message in messages %}<article><p>{{ message.contenu }}</p><small>{{ message.dateCreation|date('d/m/Y H:i') }}</small></article>{% else %}<p>Aucun message.</p>{% endfor %}<h2>Publier un message</h2>{# TODO ETUDIANT : afficher le formulaire Symfony ici #}{% endblock %}

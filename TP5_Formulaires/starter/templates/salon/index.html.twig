@@ -1,0 +1,1 @@
+{% extends 'base.html.twig' %}{% block body %}<h1>Salons</h1>{% for salon in salons %}<article><h2><a href="{{ path('app_salon_show',{id:salon.id}) }}">{{ salon.nom }}</a></h2><p>{{ salon.description }}</p><small>{{ salon.messages|length }} message(s)</small></article>{% endfor %}{% endblock %}
